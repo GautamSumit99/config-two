@@ -8,3 +8,11 @@ two:
       metadata:
         response-timeout: 5000
         connect-timeout: 1000
+    - id: three-id
+      order: 999
+      uri: http://www.medium.com
+      predicates:
+        - Path=/hi/v0/**
+      metadata:
+        response-timeout: 5000
+        connect-timeout: 1000
