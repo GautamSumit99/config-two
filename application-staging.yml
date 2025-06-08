@@ -1,13 +1,10 @@
-spring:
-  cloud:
-    gateway:
-      routes:
-        #       test file
-        - id: two-id
-          order: 999
-          uri: http://www.medium.com
-          predicates:
-            - Path=/hi/v0/**
-          metadata:
-            response-timeout: 5000
-            connect-timeout: 1000
+two:
+  routes:
+    - id: two-id
+      order: 999
+      uri: http://www.medium.com
+      predicates:
+        - Path=/hi/v0/**
+      metadata:
+        response-timeout: 5000
+        connect-timeout: 1000
